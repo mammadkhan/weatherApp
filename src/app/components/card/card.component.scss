@@ -1,0 +1,89 @@
+.card {
+  margin-top: 1rem;
+  width: 100%;
+  padding:1.5vw;
+  border-radius: 10px;
+  box-shadow: 1px 1px 31px 1px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 1px 1px 31px 1px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 1px 1px 31px 1px rgba(0, 0, 0, 0.46);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  .main-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    *{
+        flex:1;
+    }
+    h3{
+        font-size:3.5vw;
+    }
+    #weather-icon{
+        max-width: 5.5vw;
+    }
+    p{
+        font-size:1.3vw;
+        text-align:end;
+    }
+  }
+  h2{
+    font-size:2.6vw;
+  }
+  .add-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid gray;
+    padding-top:0.6vw;
+    color:gray;
+    div{
+        display: flex;
+        align-items: center;
+        gap:0.5rem;
+        p{
+            font-size: 1vw;
+            font-weight: 500;
+        }
+        .info-icon{
+            color: gray;
+            width: 2vw;
+        }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1250px){
+  .card {
+    padding:30px;
+    .main-info{
+      h3{
+          font-size:3rem;
+      }
+      #weather-icon{
+          max-width: 80px;
+      }
+      p{
+          font-size:1.1rem;
+      }
+    }
+    h2{
+      font-size:2rem;
+    }
+    .add-info{
+      div{
+          p{
+              font-size: .9rem;
+              font-weight: 500;
+          }
+          .info-icon{
+              color: gray;
+              width: 20px;
+          }
+      }
+    }
+  }
+  
+}

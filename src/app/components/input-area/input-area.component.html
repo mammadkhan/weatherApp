@@ -1,0 +1,14 @@
+<form class="input-area" (ngSubmit)="onSubmit()">
+    <h1>Hava məlumatı almaq istədiyiniz <br/> ərazinin koordinatını daxil edin</h1>
+    <span class="divider"></span>
+    <p id="errorMSG" *ngIf="errorMSG">{{errorMSG}}</p>
+    <div class="input-sec">
+        <input id="lat" name="lat" [(ngModel)]="lat" type="number" placeholder="Enlik (Latitude)">
+        <input id="lon" name="lon" [(ngModel)]="lon" type="number" placeholder="Uzunluq (Longitude)">
+    </div>
+    <div class="action-sec">
+        <input type="submit" value="Axtar">
+        <span>və ya</span>
+        <button type="button" (click)="currentLoc()">Hazırki məkana görə axtar</button>
+    </div>
+</form>

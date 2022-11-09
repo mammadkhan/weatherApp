@@ -1,0 +1,12 @@
+<div class="output-area">
+  <div id="today">
+    <h2>Bugün</h2>
+    <app-card [weatherData]="weatherData"></app-card>
+  </div>
+  <div id="weekly">
+    <h2>Həftə</h2>
+    <div id="cards">
+      <app-mini-card *ngFor="let num of forngfor; index as i" [i]="i+1" [dailyData]="weatherData"></app-mini-card>
+    </div>
+  </div>
+</div>

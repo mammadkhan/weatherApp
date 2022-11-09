@@ -1,0 +1,8 @@
+<div class="mini-card">
+    <h3><span>{{dailyData.daily.temperature_2m_max[i] | temperature}}</span>/<span id="tempMin">{{dailyData.daily.temperature_2m_min[i] | temperature}}</span></h3>
+    <div>
+        <h4>{{dailyData.daily.weathercode[i] | weatherCode}}</h4>
+        <img src="{{dailyData.daily.weathercode[i] | icons}}" alt="">
+    </div>
+    <p>{{dailyData.daily.time[i] | date:true}}</p>
+</div>

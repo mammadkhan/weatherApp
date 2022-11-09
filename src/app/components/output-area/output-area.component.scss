@@ -1,0 +1,47 @@
+.output-area{
+    height: 100vh;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1rem;
+    #today{
+        h2{
+            font-size:3vw;
+            font-weight:800;
+        }
+    }
+    #weekly{
+        h2{
+            font-size:2vw;
+            font-weight:800;
+        }
+        #cards{
+            margin-top:1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:repeat(2,1fr);
+            gap:0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .output-area{
+        #today{
+            h2{
+                font-size:3rem;
+            }
+        }
+        #weekly{
+            h2{
+                font-size:2rem;
+                font-weight:800;
+            }
+            #cards{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows:repeat(3,1fr);
+            }
+        }
+    }
+}

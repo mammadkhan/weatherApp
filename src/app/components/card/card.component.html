@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="main-info">
+        <h3>{{weatherData.current_weather.temperature | temperature}}</h3>
+        <img id="weather-icon" src="{{weatherData.current_weather.weathercode | icons}}" alt="Current weather icon">
+        <p innerHtml="{{weatherData.current_weather.time | date:false}}"></p>
+    </div>
+    <h2>{{weatherData.current_weather.weathercode | weatherCode}}</h2>
+    <div class="add-info">
+        <div class="start">
+            <p>{{weatherData.current_weather.windspeed | windSpeed}}</p>
+            <img class="info-icon" src="../../../assets/icons/wind.svg" alt="Current weather icon">
+        </div>
+        <div class="end">
+            <p>{{weatherData.current_weather.winddirection}}</p>
+            <img class="info-icon" src="../../../assets/icons/compass.svg" alt="Current weather icon">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+:host{
+    display: grid;
+    grid-template-columns:3fr 2fr;
+}
+
+@media screen and (max-width: 1250px){
+    :host{
+        display: initial;
+    }
+}
